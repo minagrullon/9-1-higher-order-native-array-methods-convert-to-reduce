@@ -13,7 +13,11 @@ const exampleVoteData = require('../data/votes');
 */
 
 // THERE ARE NO TESTS FOR THESE FILE EXERCISES
-// use `node 01-reduce-no-tests.js` to test appropriate uncommented functions.
+// TO TEST IN TERMINAL:
+// 1. Uncomment appropriate console.log line
+// 2. In terminal type `node src/01`
+// 3. Push `tab`
+// 4. Push `ENTER`
 
 /***********************************************************************/
 

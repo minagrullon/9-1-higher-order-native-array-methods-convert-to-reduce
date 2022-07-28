@@ -24,6 +24,18 @@ Complete each function inside of the `src/` folder. The comments and tests will 
 
 ### Tests
 
+\*\*You must manually test the `src/01-reduce-no-tests.js` file\*\*
+
+#### To Test `src/01-reduce-no-tests.js` Locally In Terminal:
+
+1.  Uncomment appropriate `console.log` line
+1.  In terminal type `node src/01`
+1.  Push `tab`
+1.  Push `ENTER`
+1.  When you are done, re-comment the `console.log` line you uncommented
+
+#### To Test All Other Files
+
 To run the tests, you can run the following command from the command line. You will need to be in the root directory of your repository.
 
 ```
