@@ -1,6 +1,6 @@
 # Higher Order Native Array Methods Convert To Reduce Lab
 
-`.reduce` may not always be the best use case to solve a problem. But knowing how to use such a strong method, **THE BEAST OF ARRAY METHODS** , is worth your while. You have both song and vote data to work with in this exercise. Use your knowledge of `.reduce` to solve all the problems you formerly solved with `.map`, `.filter`, `.find`, `.some`, and `.every`.
+`.reduce` may not always be the best use case to solve a problem. But knowing how to use such a strong method, **THE STRONGEST OF ARRAY METHODS!** , is worth your while. You have both song and vote data to work with in this exercise. Use your knowledge of `.reduce` to solve all the problems you formerly solved with `.map`, `.filter`, `.find`, `.some`, and `.every`.
 Plus solve a few new problems that you have not solved before.
 **Good Luck!**
 
