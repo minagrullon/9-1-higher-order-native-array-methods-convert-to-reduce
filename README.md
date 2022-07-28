@@ -1,6 +1,8 @@
 # Higher Order Native Array Methods Convert To Reduce Lab
 
-You've been tasked with building functionality for a music application that wants to allow its users to quickly search and sort through their favorite playlists. Use your knowledge of higher order native array methods to solve this functions.
+`.reduce` may not always be the best use case to solve a problem. But knowing how to use such a strong method, **THE BEAST OF ARRAY METHODS** , is worth your while. You have both song and vote data to work with in this exercise. Use your knowledge of `.reduce` to solve all the problems you formerly solved with `.map`, `.filter`, `.find`, `.some`, and `.every`.
+Plus solve a few new problems that you have not solved before.
+**Good Luck!**
 
 ## Getting started
 
