@@ -95,4 +95,4 @@ function countVotes(exampleVoteData) {}
 // look in terminal to see if you match the example
 // when you are done, comment line again
 
-console.log(countVotes(exampleVoteData));
+// console.log(countVotes(exampleVoteData));
