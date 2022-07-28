@@ -96,5 +96,3 @@ function countVotes(exampleVoteData) {}
 // when you are done, comment line again
 
 console.log(countVotes(exampleVoteData));
-
-/***********************************************************************/
