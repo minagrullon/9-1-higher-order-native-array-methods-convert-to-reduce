@@ -34,7 +34,7 @@ Complete each function inside of the `src/` folder. The comments and tests will 
 1.  Push `ENTER`
 1.  When you are done, re-comment the `console.log` line you uncommented
 
-#### To test all other files
+#### To test all other files using Jest
 
 To run the tests, you can run the following command from the command line. You will need to be in the root directory of your repository.
 
