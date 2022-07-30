@@ -34,7 +34,10 @@ const exampleVoteData = require('../data/votes');
  * > 1680
  */
 
-function allSongsRuntimeSum(exampleSongData) {}
+function allSongsRuntimeSum(exampleSongData) {
+  const runTime = exampleSongData.reduce((runSum, obj) => runSum + obj.runtimeInSeconds, 0)
+  return runTime
+}
 
 // UNCOMMENT THE CONSOLE.LOG LINE BELOW TO TEST
 // run `node src/01-reduce-no-tests.js`
@@ -62,7 +65,16 @@ function allSongsRuntimeSum(exampleSongData) {}
   }
  */
 
-function getMaxRuntime(exampleSongData) {}
+function getMaxRuntime(exampleSongData) {
+  const biggest = exampleSongData.reduce((accumulator, song) => {
+    
+    if(song.runtimeInSeconds < accumulator.runtimeInSeconds){
+      return accumulator
+    }
+    return song
+  }, 0)
+  return biggest
+}
 
 // UNCOMMENT  THE CONSOLE.LOG LINE BELOW TO TEST
 // run `node src/01-reduce-no-tests.js`
@@ -92,7 +104,16 @@ function getMaxRuntime(exampleSongData) {}
 }
  */
 
-function countVotes(exampleVoteData) {}
+function countVotes(exampleVoteData) {
+
+const votesCount = exampleVoteData.reduce((countedV, vote) =>{
+  if(!countedV[vote.vote]){
+    countedV[vote.vote] = 1
+  } else { countedV[vote.vote] += 1}
+return countedV
+}, {})
+return votesCount
+}
 
 // UNCOMMENT THE CONSOLE.LOG LINE BELOW TO TEST
 // run `node src/01-reduce-no-tests.js`

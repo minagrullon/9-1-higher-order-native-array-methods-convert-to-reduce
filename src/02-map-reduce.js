@@ -17,7 +17,15 @@ const exampleSongData = require('../data/songs');
  * @returns {string[]} An array of strings, all of which are song titles.
  */
 
-function getSongTitles(exampleSongData) {}
+function getSongTitles(exampleSongData) {
+const titles = exampleSongData.reduce((accu, song) => {
+  accu.push(song.title)
+  return accu
+}, [])
+return titles
+
+}
+// console.log(getSongTitles(exampleSongData))
 
 /***********************************************************************/
 
@@ -32,8 +40,15 @@ function getSongTitles(exampleSongData) {}
  *  //> [ "Berlin Tsukin by Taiyo Ky", "Up by Sebastian Kamae", ... ]
  */
 
-function getSongDetails(exampleSongData) {}
+function getSongDetails(exampleSongData) {
+const details = exampleSongData.reduce((accu, song) => {
+  accu.push(`${song.title} by ${song.artist}`)
+  return accu
+}, [])
+return details
+}
 
+// console.log(getSongDetails(exampleSongData))
 /***********************************************************************/
 
 /**
@@ -47,7 +62,17 @@ function getSongDetails(exampleSongData) {}
  *  //> [ { "Berlin Tsukin": "Taiyo Ky" }, { Up: "Sebastian Kamae" }, ... ]
  */
 
-function getTitleAndArtist(exampleSongData) {}
+function getTitleAndArtist(exampleSongData) {
+const titleAndArtist = exampleSongData.reduce((accu, song) =>{
+  let obj = {}
+  obj[song.title] = song.artist
+  accu.push(obj)
+  return accu
+}, [])
+return titleAndArtist
+}
+
+// console.log(getTitleAndArtist(exampleSongData))
 
 module.exports = {
   getSongTitles,

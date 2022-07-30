@@ -17,7 +17,15 @@ const exampleSongData = require('../data/songs');
  * @returns {Object[]} An array of objects.
  * You must use .reduce
  */
-function getSongsBySaib(exampleSongData) {}
+function getSongsBySaib(exampleSongData) {
+const saib = exampleSongData.reduce((accu, song) => {
+if(song.artist === "Saib") accu.push(song)
+return accu
+}, [])
+return saib
+}
+
+// console.log( getSongsBySaib(exampleSongData))
 
 /***********************************************************************/
 
@@ -29,8 +37,15 @@ function getSongsBySaib(exampleSongData) {}
  * You must use .reduce
  */
 
-function getSongsOverThreeMinutes(exampleSongData) {}
+function getSongsOverThreeMinutes(exampleSongData) {
+const over3Min = exampleSongData.reduce((accu, song) => {
+  if(song.runtimeInSeconds > 180) accu.push(song)
+  return accu
+}, [])
+return over3Min
+}
 
+// console.log(getSongsOverThreeMinutes(exampleSongData))
 /***********************************************************************/
 
 /**
@@ -41,7 +56,15 @@ function getSongsOverThreeMinutes(exampleSongData) {}
  * You must use .reduce
  */
 
-function getTitleTracks(exampleSongData) {}
+function getTitleTracks(exampleSongData) {
+const sameName = exampleSongData.reduce((accu, song) => {
+if(song.title === song.album) accu.push(song)
+return accu
+}, [])
+return sameName
+}
+
+// console.log(getTitleTracks(exampleSongData))
 
 module.exports = {
   getSongsBySaib,
